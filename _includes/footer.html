@@ -1,0 +1,68 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li>
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fa fa-github-square"></i>
+              <span class="username">{{ site.github_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fa fa-twitter"></i>
+              <span class="username">{{ site.twitter_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.facebook_username %}
+          <li>
+            <a href="https://www.facebook.com/{{ site.facebook_username }}">
+              <i class="fa fa-facebook-square"></i>
+              <span class="username">{{ site.facebook_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.stackoverflow_username %}
+          <li>
+            <a href="http://magento.stackexchange.com/users/15644/{{ site.stackoverflow_username }}">
+              <i class="fa fa-stack-overflow"></i>
+              <span class="username">{{ site.stackoverflow_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        Build with Jekyll, bootstrap & font-awesome.
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+<div class="absolute-footer">
+  Handmade with <i class="fa fa-heart"></i>
+</div>

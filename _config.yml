@@ -1,0 +1,15 @@
+# Site settings
+title: steenmeijer.nu
+email: wouter@steenmeijer.nu
+description: > # this means to ignore newlines until "baseurl:"
+  Steenmeijer.nu freelance frontend webdevelopment.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: woutersteen
+github_username:  woutersteen
+stackoverflow_username: wouter-steenmeijer
+facebook_username: steenmeijer
+linkedin_username: woutersteenmeijer
+
+# Build settings
+markdown: kramdown
