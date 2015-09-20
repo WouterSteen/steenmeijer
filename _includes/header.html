@@ -15,11 +15,9 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+          <a class="page-link" href="{{ site.baseurl }}/skills" title="Skilss">Skills</a>
+          <a class="page-link" href="{{ site.baseurl }}/magento-2" title="Magento 2">Magento 2</a>
+          <a class="page-link" href="{{ site.baseurl }}/contact" title="Contact">Contact</a>
       </div>
     </nav>
 

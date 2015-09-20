@@ -43,13 +43,18 @@
         &:not(:first-child) {
             margin-left: 20px;
         }
+
+        @include media-query($on-palm) { 
+            color: $text-color;
+        }
     }
 
     @include media-query($on-palm) {
         position: absolute;
-        top: 9px;
+        top: 17px;
         right: 30px;
         background-color: $background-color;
+        color: $dark-text-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
